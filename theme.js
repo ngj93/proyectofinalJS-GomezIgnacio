@@ -6,6 +6,10 @@ tema.addEventListener("click", function(){
     }else{
         darkMode()
     }
+    Toastify({
+        text: "Dark Mode-activado",
+        duration: 3000
+    }).showToast();
 })
 
 function darkMode() {
@@ -13,6 +17,10 @@ function darkMode() {
     body.style.backgroundColor = "black"
 
     localStorage.setItem("theme", "dark")
+    Toastify({
+        text: "Dark Mode-activado",
+        duration: 3000
+    }).showToast();
 }
 
 function lightMode() {
@@ -20,6 +28,10 @@ function lightMode() {
     body.style.backgroundColor = "white"
 
     localStorage.setItem("theme", "light")
+    Toastify({
+        text: "Dark Mode-activado",
+        duration: 3000
+    }).showToast();
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -29,3 +41,10 @@ document.addEventListener("DOMContentLoaded", function () {
         lightMode()
     }
 })
+
+// tema.addEventListener('click', () => {
+//     Toastify({
+//         text: "Dark Mode-activado",
+//         duration: 3000
+//     }).showToast();
+// })
