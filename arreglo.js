@@ -9,7 +9,7 @@ const arreglo = [
   { name: "Dolar australiano", abrev: "AUD" },
 ];
 
-//ORDENO ARRAY
+
 arreglo.sort(function (a, b) {
   if (a.name > b.name) {
     return 1;
@@ -20,7 +20,7 @@ arreglo.sort(function (a, b) {
   return 0;
 });
 
-// IMPRIMO EN HTML
+
 const abrev = document.getElementById("abrev");
 const disponibles = document.createElement("table");
 arreglo.forEach((element) => {
